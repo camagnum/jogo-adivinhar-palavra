@@ -6,7 +6,8 @@ import PySimpleGUI as sg
 sg.theme('GreenTan')
 
 layout = [
-    [sg.Input('Chute uma letra',size=(18,0),key='palpite')],
+    [sg.Text('Insira uma letra:')],
+    [sg.Input(size=(18,0),key='palpite')],
     [sg.Button('Chutar'),sg.Button('Desistir')],
     [sg.Output(size=(39,10))]
 ]
