@@ -53,12 +53,13 @@ try:
                     err = False
             
             if err == True:
-                print(f'A palavra não tem {chute.upper()}!')
+                print(f'\nA palavra não tem {chute.upper()}!')
             
             print('\n',' '.join(oculta))    
             if acertos == len(selecao_palavras[indice]):
                 print('\nParabéns! Você acertou a palavra!')
         
+            janela['palpite'].Update('')
         if evento == 'Desistir':
             print(f'Você desistiu! A palavra era {sort_palavra}.')
             break
